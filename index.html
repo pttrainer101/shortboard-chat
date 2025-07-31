@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortboard Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Shortboard Chat</h1>
+  <p>Your ID: <span id="yourId">Loading...</span></p>
+  
+  <input type="text" id="targetId" placeholder="Enter user ID">
+  <button id="connectBtn">Connect</button>
+  <div id="status"></div>
+
+  <div id="chatArea" style="display:none;">
+    <input type="text" id="messageInput" placeholder="Type a short message">
+    <button id="sendBtn">Send</button>
+    <div id="chatBox"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+﻿services:
+  - type: web
+    name: shortboard-chat
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
